@@ -5,10 +5,10 @@
 export const environment = {
   production: false,
   auth: {
-    CLIENT_ID: "[YOUR_CLIENT_ID]",
-    CLIENT_DOMAIN: "[YOUR_AUTH0_DOMAIN]", // e.g., 'you.auth0.com'
-    REDIRECT: "[YOUR-AUTH0-CALLBACK]",
-    LOGOUT_URL: "[YOUR-AUTH0-LOGOUT-URL]"
+    CLIENT_ID: "lH1o9VkYylSLU47iZCTq6ZvGz2f2kCAU",
+    CLIENT_DOMAIN: "dev-1337.auth0.com", // e.g., 'you.auth0.com'
+    REDIRECT: "https://auth0messaround.stackblitz.io/callback",
+    LOGOUT_URL: "https://auth0messaround.stackblitz.io"
   }
 };
 
