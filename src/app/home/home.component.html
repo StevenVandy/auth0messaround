@@ -1,18 +1,20 @@
 <section class="jumbotron">
-  <img src="https://cdn.auth0.com/blog/logos/angular-and-auth0.png" alt="Auth0 loves Angular logo"/>
-  <h1>Auth0 QuickStart</h1>
+  <img style="border-radius: 40%" src="https://img.timesnownews.com/story/1528101025-brisk_walk.PNG?d=600x450" alt="Auth0 loves Angular logo"/>
+  <h1>Steps on Steps</h1>
+  <h3 style="color:white">Welcome to the SCE Step Challenge Website</h3>
 
-  <p>Start your next Angular app with authentication out of the box and get to building that next great app in five simple steps.</p>
+  <p>Click the Login / Signup button to continue</p>
 
-  <div class="btn btn-success btn-lg" *ngIf="!authService.authenticated" (click)="signup()">Sign Up for Free</div>
+  <!-- <div class="btn btn-success btn-lg" *ngIf="!authService.authenticated" (click)="signup()">Sign Up for Free</div> -->
 
   <div class="btn btn-danger btn-lg" *ngIf="authService.authenticated" (click)="authService.logout()">Logout</div>
 </section>
 
 <article class="card-docs">
-  <i class="card-docs-icon icon-budicon-499 orange"></i>
-  <h2 class="card-docs-title">Step 4</h2>
-  <p class="card-docs-description" *ngIf="!authService.authenticated"><a class="btn btn-success" (click)="authService.login()">Login</a></p>
+  <!-- <i class="card-docs-icon icon-budicon-499 orange"></i> -->
+  <h2 class="card-docs-title">Last year SCE walked over a million miles</h2>
+  <h1 class="card-docs-description">I should put some graphic here, huh?</h1>
+  <p class="card-docs-description" *ngIf="!authService.authenticated"><a class="btn btn-success" (click)="authService.login()">Login / Signup</a></p>
   <p class="card-docs-description" *ngIf="authService.authenticated">You are already logged in. Proceed to next step!</p>
 </article>
 
