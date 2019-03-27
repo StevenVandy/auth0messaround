@@ -3,7 +3,7 @@
   <h1>Steps on Steps</h1>
   <h3 style="color:white">Welcome to the SCE Step Challenge Website</h3>
 
-  <p>Click the Login / Signup button to continue</p>
+  <p *ngIf="!authService.authenticated">Click the Login / Signup button to continue</p>
 
   <!-- <div class="btn btn-success btn-lg" *ngIf="!authService.authenticated" (click)="signup()">Sign Up for Free</div> -->
 
@@ -15,7 +15,7 @@
   <h2 class="card-docs-title">Last year SCE walked over a million miles</h2>
   <h1 class="card-docs-description">I should put some graphic here, huh?</h1>
   <p class="card-docs-description" *ngIf="!authService.authenticated"><a class="btn btn-success" (click)="authService.login()">Login / Signup</a></p>
-  <p class="card-docs-description" *ngIf="authService.authenticated">You are already logged in. Proceed to next step!</p>
+  <!-- <p class="card-docs-description" *ngIf="authService.authenticated">You are already logged in. Proceed to next step!</p> -->
 </article>
 
 
